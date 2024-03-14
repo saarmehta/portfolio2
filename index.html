@@ -1,0 +1,88 @@
+css
+:root {
+    --primary-color: #007bff; /* Blue for professionalism */
+    --secondary-color: #6c757d; /* Gray for subtlety */
+    --background-color: #f8f9fa; /* Light background */
+    --text-color: #212529; /* Dark text for readability */
+    --accent-color: #28a745; /* Green for calls to action */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #343a40; /* Dark mode background */
+        --text-color: #f8f9fa; /* Light text for dark mode */
+    }
+}
+
+css
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+css
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saaransh Mehta - Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Saaransh Mehta</h1>
+        <p>Data Scientist | Analytics Consultant | Instructor</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I've worked in the data analytics industry for over eight years, providing business intelligence to Fortune 500 clients. I discover latent insights in data, forecast business trends, recommend alternatives, and automate data-driven decisions to generate valuable insights and create impact for businesses. Interested in business analytics, data mining, machine learning, strategic decision making, inductive inference, and problem-solving.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p><strong>Instructor-Data Analytics Edx/Monash University</strong> - Teaching a bootcamp on Data analytics and visualization.</p>
+            <!-- Include other experience details -->
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p><strong>Weather Impact on Retail Sales</strong> - Quantifying the effect of weather on retail sales through data analysis and visualization.</p>
+            <!-- Include other project details -->
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <!-- Include education details -->
+        </section>
+
+        <div class="contact footer">
+            <h2>Contact Me</h2>
+            <p>Email: Saar.mehta@gmail.com | Phone: +61424199515</p>
+        </div>
+    </div>
+</body>
+</html>
