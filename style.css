@@ -3,39 +3,33 @@
     --secondary-color: #6c757d; /* Gray for subtlety */
     --background-color: #f8f9fa; /* Light background */
     --text-color: #212529; /* Dark text for readability */
-    --accent-color: #28a745; /* Green for calls to action */
 }
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: #343a40; /* Dark mode background */
-        --text-color: #f8f9fa; /* Light text for dark mode */
-    }
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.header, .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 0;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
+.header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
+.footer {
+    background: var(--secondary-color);
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
